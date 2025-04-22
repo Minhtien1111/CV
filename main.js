@@ -201,7 +201,7 @@ gltfLoader.load(
 
         // adding texture to book
         const bookTexture = new THREE.TextureLoader().load(
-          'textures/book-inner.jpg'
+          'textures/book-inner.png'
         );
         bookTexture.flipY = false;
         child.material = new THREE.MeshStandardMaterial({
@@ -331,7 +331,7 @@ function loadIntroText() {
       new THREE.MeshPhongMaterial({ color: 0x171f27, flatShading: true }),
       new THREE.MeshPhongMaterial({ color: 0xffffff }),
     ];
-    const titleGeo = new TextGeometry('SUSHIL THAPA', {
+    const titleGeo = new TextGeometry('MiTi', {
       font: font,
       size: 0.08,
       height: 0.01,
@@ -348,7 +348,7 @@ function loadIntroText() {
       new THREE.MeshPhongMaterial({ color: 0xffffff }),
     ];
     const subTitleGeo = new TextGeometry(
-      'Web Designer / Developer / Content Creator',
+      'Web Designer / Developer',
       {
         font: font,
         size: 0.018,
